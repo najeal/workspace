@@ -1,0 +1,65 @@
+// Place your key bindings in this file to override the defaults
+[
+    // Traverse VSCode IntelliSense suggestions with vim keybindings.
+    {
+        "key": "ctrl+j",
+        "command": "selectNextSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "selectPrevSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    // VSCode terminal commands.
+    {
+        "key": "cmd+enter",
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "cmd+w",
+        "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus"
+    },
+    // Ensure that tab button works in vim.
+    {
+        "key": "tab",
+        "command": "tab",
+        "when": "editorTextFocus && !editorTabMovesFocus"
+    },
+    {
+        "key": "shift+tab",
+        "command": "outdent",
+        "when": "editorTextFocus && !editorTabMovesFocus"
+    },
+    // auto
+    {
+        "key": "ctrl+g",
+        "command": "-extension.vim_ctrl+g",
+        "when": "editorTextFocus && vim.active && vim.use<C-g> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+g",
+        "command": "-workbench.action.gotoLine"
+    },
+    {
+        "key": "ctrl+g",
+        "command": "nerdtree.unfocusSidebarOrClose",
+        "when": "filesExplorerFocus && sideBarVisible"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "-nerdtree.unfocusSidebarOrClose",
+        "when": "filesExplorerFocus && sideBarVisible"
+    },
+    {
+        "key": "ctrl+g",
+        "command": "workbench.files.action.focusFilesExplorer",
+        "when": "!sideBarVisible && !suggestWidgetVisible && vim.mode != 'Insert'"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "-workbench.files.action.focusFilesExplorer",
+        "when": "!sideBarVisible && !suggestWidgetVisible && vim.mode != 'Insert'"
+    }
+]
