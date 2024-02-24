@@ -45,10 +45,10 @@
           "before": ["g", "r"],
           "commands": ["editor.action.referenceSearch.trigger"]
         },
-        {
-          "before": ["g", "t"],
-          "commands": ["editor.action.goToTypeDefinition"]
-        },
+        //{
+        //  "before": ["g", "t"],
+        //  "commands": ["editor.action.goToTypeDefinition"]
+        //},
         {
           "before": ["g", "p", "t"],
           "commands": ["editor.action.peekTypeDefinition"]
