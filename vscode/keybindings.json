@@ -17,8 +17,8 @@
         "command": "workbench.action.terminal.toggleTerminal"
     },
     {
-        "key": "cmd+w",
-        "command": "workbench.action.terminal.kill",
+        "key": "cmd+z",
+        "command": "workbench.action.terminal.toggleTerminal",
         "when": "terminalFocus"
     },
     // Ensure that tab button works in vim.
